@@ -19,6 +19,11 @@ export class Animal extends ModelGeneric implements IAnimal {
 
   static initializer(sequelize: any) {
     this.init({
+      id: {
+        type: DataTypes.INTEGER,
+        primaryKey: true,
+        allowNull: false
+      },
       active: {
         type: DataTypes.BOOLEAN,
         allowNull: true,
@@ -70,7 +75,6 @@ export class Animal extends ModelGeneric implements IAnimal {
         allowNull: false,
         values: [ 'ativo', 'inativo', 'vendido', 'descartado' ]
       }
-
     }, {
       tableName: 'tbl_animal',
       sequelize,
