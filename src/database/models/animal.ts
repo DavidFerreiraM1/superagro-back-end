@@ -73,7 +73,6 @@ export class Animal extends ModelGeneric implements IAnimal {
 
     }, {
       tableName: 'tbl_animal',
-      schema: 'public',
       sequelize,
     });
 
