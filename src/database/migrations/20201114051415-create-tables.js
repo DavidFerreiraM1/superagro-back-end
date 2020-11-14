@@ -17,7 +17,7 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      tipoAnimal: {
+      tipo_animal: {
         type: Sequelize.STRING,
         allowNull: false,
         values: ['poultry', 'swine']
@@ -26,15 +26,15 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      dataNascimento: {
+      data_nascimento: {
         type: Sequelize.DATE,
         allowNull: false,
       },
-      entradaPlantel: {
+      entrada_plantel: {
         type: Sequelize.DATE,
         allowNull: false,
       },
-      pesoCompra: {
+      peso_compra: {
         type: Sequelize.STRING,
         allowNull: false,
       },
@@ -42,19 +42,19 @@ module.exports = {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      codigoRastreamento: {
+      codigo_rastreamento: {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      faseProducao: {
+      fase_producao: {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      tipoGranja: {
+      tipo_granja: {
         type: Sequelize.STRING,
         allowNull: false,
       },
-      statusAnimal: {
+      status_animal: {
         type: Sequelize.STRING,
         allowNull: false,
         values: [ 'ativo', 'inativo', 'vendido', 'descartado' ]
