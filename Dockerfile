@@ -12,5 +12,3 @@ COPY . .
 
 RUN yarn
 EXPOSE 3001
-
-CMD [ "yarn", "dev" ]

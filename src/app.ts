@@ -1,6 +1,8 @@
 import express from 'express';
 import morgan from 'morgan';
 import cors from 'cors';
+import router from './routes';
+import './database';
 
 class App {
   public express: express.Application;
@@ -17,7 +19,7 @@ class App {
   }
 
   private routes(): void {
-    this.express.get('/', (req, res) => res.send('OK'))
+    this.express.use('/app', router);
   }
 }
 
