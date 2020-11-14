@@ -1,8 +1,8 @@
 import { DataTypes } from "sequelize";
-import { ModelGeneric } from "./model-generic";
+import { AbstractModel } from "./abastract-model";
 import {AnimalCategory, AnimalStatus, IAnimal} from '../../animal/interfaces/animal';
 
-export class Animal extends ModelGeneric implements IAnimal {
+export class Animal extends AbstractModel implements IAnimal {
   id!: string;
   nome!: string;
   tipoAnimal!: AnimalCategory;
