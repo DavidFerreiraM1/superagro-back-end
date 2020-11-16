@@ -10,5 +10,4 @@ RUN wget https://github.com/jwilder/dockerize/releases/download/$DOCKERIZE_VERSI
 WORKDIR /superagroapp
 COPY . .
 
-RUN yarn
 EXPOSE 3001

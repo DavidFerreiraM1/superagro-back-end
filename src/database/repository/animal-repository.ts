@@ -27,6 +27,16 @@ class AnimalRepository {
       throw new Error(err);
     }
   }
+
+  async update(id: string, values: IAnimal): Promise<IAnimal | null> {
+    try {
+      await Animal.update(values, { where: { id } });
+      const updatedAnimal = await Animal.findOne({ where: { id } })
+      return updatedAnimal;
+    } catch (err) {
+      throw new Error(err)
+    }
+  }
 }
 
 export default new AnimalRepository();
