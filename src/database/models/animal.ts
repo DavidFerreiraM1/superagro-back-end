@@ -21,6 +21,7 @@ export class Animal extends AbstractModel implements IAnimal {
     this.init({
       id: {
         type: DataTypes.INTEGER,
+        autoIncrement: true,
         primaryKey: true,
         allowNull: false
       },

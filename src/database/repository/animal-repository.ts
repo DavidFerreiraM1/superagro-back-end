@@ -1,3 +1,4 @@
+import { IAnimal } from '../../animal/interfaces/animal';
 import { Animal } from '../models';
 
 class AnimalRepository {
@@ -14,6 +15,15 @@ class AnimalRepository {
       const animal = await Animal.findOne({ where: { id } });
       return animal;
     } catch(err) {
+      throw new Error(err);
+    }
+  }
+  async create(values: IAnimal): Promise<Animal | null> {
+    try {
+      const animal = await Animal.create(values);
+      return animal;
+    } catch (err) {
+      console.log(err)
       throw new Error(err);
     }
   }
