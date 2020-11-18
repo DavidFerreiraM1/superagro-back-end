@@ -28,14 +28,14 @@ pois sem permissão o docker não conseguirá executar o script de inicializaç�
 O docker irá baixar as imagens que você não tiver instalados localmente, executará o container do postgres, após isso irá recuperar as dependências do projeto em node, executar as migrations e as seeds com sequelize e então subirá o server localmente de forma automática.
 No fim você terá uma saída semelhante à "SERVER ONLINE ON PORT 3001!".
 
-Bem sucedido o processo de build e levantamento dos containers, você já pode consumir as rotas através da https://localhost:3001/app. <br />
+Bem sucedido o processo de build e levantamento dos containers, você já pode consumir as rotas através da http://localhost:3001/app. <br />
 Como o backend possui apenas recursos básicos para consumir dados relacionados aos animais cadastrados, cada verbo http corresponde uma uma rota
 
-GET = (https://localhost:3001/app/) - Retorna uma lista com todos os animais cadastrados <br />
-GET = (https://localhost:3001/app/?id=[some_id]) - Retorna o animal pelo id <br />
-POST = (https://localhost:3001/app/) - Rota para persistir um novo animal <br />
-PUT = (https://localhost:3001/app/[some_id]) -  Rota para persistir um novo animal <br />
-DELETE = (https://localhost:3001/app/[some_id]) - Rota para excluir um animal <br />
+GET = (http://localhost:3001/app/) - Retorna uma lista com todos os animais cadastrados <br />
+GET = (http://localhost:3001/app/?id=[some_id]) - Retorna o animal pelo id <br />
+POST = (http://localhost:3001/app/) - Rota para persistir um novo animal <br />
+PUT = (http://localhost:3001/app/[some_id]) -  Rota para persistir um novo animal <br />
+DELETE = (http://localhost:3001/app/[some_id]) - Rota para excluir um animal <br />
 
 ## Considerações
 
