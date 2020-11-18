@@ -26,7 +26,7 @@ OBS: É necessário dar permissão para o usuário acessar o diretório .docker 
 pois sem permissão o docker não conseguirá executar o script de inicialização do server em Node.
 
 O docker irá baixar as imagens que você não tiver instalados localmente, executará o container do postgres, após isso irá recuperar as dependências do projeto em node, executar as migrations e as seeds com sequelize e então subirá o server localmente de forma automática.
-No fim você terá uma saída semelhante a "SERVER ONLINE ON PORT 3001!".
+No fim você terá uma saída semelhante à "SERVER ONLINE ON PORT 3001!".
 
 Bem sucedido o processo de build e levantamento dos containers, você já pode consumir as rotas através da https://localhost:3001/app. <br />
 Como o backend possui apenas recursos básicos para consumir dados relacionados aos animais cadastrados, cada verbo http corresponde uma uma rota
