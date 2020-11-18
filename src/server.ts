@@ -1,4 +1,10 @@
+import dotenv from 'dotenv';
 import App from './app';
 
+dotenv.config();
+
 const server = App;
-server.listen(3001, () => console.log('SERVER ONLINE ON PORT 3001!'));
+server.listen(
+  process.env.PORT,
+  () => console.log(`SERVER ONLINE ON PORT ${process.env.PORT}!`)
+);

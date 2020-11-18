@@ -4,7 +4,13 @@ services:
   app:
     build: .
     container_name: app
-    command: dockerize -wait tcp://superagro_app:queenoftheskiesb747@localhost:5432/postgres -timeout 120s
+    command: dockerize -wait tcp://superagro_app:queenoftheskiesb747@superagro_db:5432/postgres -timeout 40s -template ./.docker/.env.template:.env ./.docker/entrypoint.sh
+    environment:
+      - PORT=3001
+      - DB_HOST=superagro_db
+      - DB_USER=superagro_app
+      - DB_PASSWORD=queenoftheskiesb747
+      - DB_NAME=superagro_db
     volumes:
       - .:/superagroapp
     ports:
