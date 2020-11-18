@@ -22,7 +22,7 @@ Certificado de que ambos estão instalados, na raiz do projeto execute o comando
 ```
   docker-compose up --build
 ```
-OBS: É necessário de permissão para o usuário acessar o diretório .docker na raiz do projeto.
+OBS: É necessário dar permissão para o usuário acessar o diretório .docker na raiz do projeto.
 pois sem permissão o docker não conseguirá executar o script de inicialização do server em Node.
 
 O docker irá baixar as imagens que você não tiver instalados localmente, executará o container do postgres, após isso irá recuperar as dependências do projeto em node, executar as migrations e as seeds com sequelize e então subirá o server localmente de forma automática.
