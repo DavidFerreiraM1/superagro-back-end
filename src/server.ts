@@ -6,5 +6,5 @@ dotenv.config();
 const server = App;
 server.listen(
   process.env.PORT,
-  () => console.log('SERVER ONLINE ON PORT 3001!')
+  () => console.log(`SERVER ONLINE ON PORT ${process.env.PORT}!`)
 );
